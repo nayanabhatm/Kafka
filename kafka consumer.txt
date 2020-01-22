@@ -1,0 +1,15 @@
+[cloudera@quickstart ~]$ cd kafka_2.11-0.10.2.1/bin/
+[cloudera@quickstart bin]$ sh kafka-console-consumer.sh --topic testnbm --from-beginning --zookeeper localhost:2082
+Using the ConsoleConsumer with old consumer is deprecated and will be removed in a future major release. Consider using the new consumer by passing [bootstrap-server] instead of [zookeeper].......
+^C[cloudera@quickstart bin]$ sh kafka-console-consumer.sh --topic testnbm --from-beginning --zookeeper localhost:2082
+Using the ConsoleConsumer with old consumer is deprecated and will be removed in a future major release. Consider using the new consumer by passing [bootstrap-server] instead of [zookeeper].
+[2020-01-07 03:36:58,886] WARN Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect (org.apache.zookeeper.ClientCnxn)
+java.net.ConnectException: Connection refused
+..............................
+
+[cloudera@quickstart bin]$ sh kafka-console-consumer.sh --topic testnbm --from-beginning --zookeeper localhost:2182
+Using the ConsoleConsumer with old consumer is deprecated and will be removed in a future major release. Consider using the new consumer by passing [bootstrap-server] instead of [zookeeper].
+this is new messgae
+producing new mesage is my task......
+^CProcessed a total of 2 messages
+[cloudera@quickstart bin]$ 

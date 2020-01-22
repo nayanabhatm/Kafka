@@ -1,0 +1,6 @@
+Step 1: Start Zookeeper 
+ sh zookeeper-server-start.sh ../config/zookeeper.properties 
+Step 2: Start kafka server or broker
+sh kafka-server-start.sh ../config/server.properties 
+Step 3: CReate a topic
+sh kafka-topics.sh --create --zookeeper localhost:2182 --replication-factor 1 --partition 1 --topic topicname

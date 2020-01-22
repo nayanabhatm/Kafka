@@ -1,0 +1,7 @@
+[cloudera@quickstart bin]$ sh kafka-console-producer.sh --topic testnbm --broker-list localhost:9092
+hi
+hello
+this is from producer
+producing some messages
+this is new messgae
+producing new mesage is my task......
