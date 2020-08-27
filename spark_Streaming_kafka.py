@@ -1,3 +1,6 @@
+import findspark
+findspark.init()
+
 from pyspark import SparkContext,SparkConf
 from pyspark.sql import SparkSession,SQLContext
 from pyspark.streaming import StreamingContext

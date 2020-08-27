@@ -1,0 +1,5 @@
+Start netcat as server
+$ nc -l 44444
+
+Start netcat as client to listen on port 44444
+$ nc localhost 44444

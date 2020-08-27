@@ -2,8 +2,6 @@ from kafka import KafkaProducer,KafkaConsumer
 import json
 import os
 
-
-
 bootstraps=['localhost:9092']
  #writes the message to kafka topic as bytes
 producer = KafkaProducer(bootstrap_servers=bootstraps)
